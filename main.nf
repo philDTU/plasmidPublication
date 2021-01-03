@@ -44,8 +44,8 @@ process run_assembly {
     tuple path("single_read.fastq"), file("plasmid_candidat.fasta") into assembly_ch
  
     """
-    $baseDir/apps/minimap2/minimap2 -x ava-ont input.fastq input.fastq > reads.paf
-    $baseDir/apps/miniasm/miniasm -s 800 -f input.fastq reads.paf > reads.gfa
+    $baseDir/apps/minimap2 -x ava-ont input.fastq input.fastq > reads.paf
+    $baseDir/apps/miniasm -s 800 -f input.fastq reads.paf > reads.gfa
     awk '/^S/{print ">"\$2"\\n"\$3}' reads.gfa  > plasmid_candidat.fasta
     """
 }
@@ -60,7 +60,7 @@ process run_map_back {
     file("remap.tsv") into remap_ch
  
     """
-    $baseDir/apps/minimap2/minimap2 -ax map-ont single_read.fastq plasmid_candidat.fasta -p 0.0 > remap.sam
+    $baseDir/apps/minimap2 -ax map-ont single_read.fastq plasmid_candidat.fasta -p 0.0 > remap.sam
     bedtools bamtobed -i remap.sam | sort -nk 2 > remap.bed
     Rscript $baseDir/apps/filter_it.R remap.bed remap.tsv 50
     """
