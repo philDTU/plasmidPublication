@@ -1,0 +1,119 @@
+Jan-03 23:20:16.233 [main] DEBUG nextflow.cli.Launcher - $> nextflow main.nf
+Jan-03 23:20:16.347 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 20.10.0
+Jan-03 23:20:16.378 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [nice_newton] - revision: 0ccf580d13
+Jan-03 23:20:16.531 [main] DEBUG nextflow.Session - Session uuid: 240b6bc9-09e6-4000-93f4-e9f9f6398778
+Jan-03 23:20:16.531 [main] DEBUG nextflow.Session - Run name: nice_newton
+Jan-03 23:20:16.535 [main] DEBUG nextflow.Session - Executor pool size: 8
+Jan-03 23:20:16.597 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 20.10.0 build 5430
+  Created: 01-11-2020 15:14 UTC (16:14 CEST)
+  System: Mac OS X 10.16
+  Runtime: Groovy 3.0.5 on Java HotSpot(TM) 64-Bit Server VM 14.0.2+12-46
+  Encoding: UTF-8 (UTF-8)
+  Process: 62406@macbook-pro.lan [192.168.86.237]
+  CPUs: 8 - Mem: 16 GB (332.5 MB) - Swap: 2 GB (1.6 GB)
+Jan-03 23:20:16.619 [main] DEBUG nextflow.Session - Work-dir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work [Mac OS X]
+Jan-03 23:20:16.620 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/bin
+Jan-03 23:20:16.689 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Jan-03 23:20:16.691 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-03 23:20:16.911 [main] DEBUG nextflow.Session - Session start invoked
+Jan-03 23:20:17.820 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-03 23:20:17.830 [main] DEBUG nextflow.Session - Workflow process names [dsl1]: filter_length, split_sequence, run_map_back, run_assembly
+Jan-03 23:20:17.869 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/data/; pattern: *.fastq; options: [:]
+Jan-03 23:20:17.950 [Actor Thread 1] DEBUG n.splitter.AbstractTextSplitter - Splitter `Fastq` collector path: nextflow.splitter.TextFileCollector$CachePath(/Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/51/fca9a8b3a9343194fcedd87f289056/Sample_B.fastq, null)
+Jan-03 23:20:18.025 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-03 23:20:18.025 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-03 23:20:18.031 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-03 23:20:18.039 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Jan-03 23:20:18.058 [Actor Thread 1] DEBUG n.splitter.AbstractTextSplitter - Splitter `Fastq` collector path: nextflow.splitter.TextFileCollector$CachePath(/Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/8f/821fbd42b179aea8fc27fb7f72f919/Sample_A.fastq, null)
+Jan-03 23:20:18.149 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-03 23:20:18.149 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-03 23:20:18.168 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-03 23:20:18.168 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-03 23:20:18.176 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-03 23:20:18.177 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-03 23:20:18.182 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jan-03 23:20:18.183 [main] DEBUG nextflow.Session - Session await
+Jan-03 23:20:18.340 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.348 [Task submitter] INFO  nextflow.Session - [b2/ef9827] Submitted process > filter_length (1)
+Jan-03 23:20:18.359 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.360 [Task submitter] INFO  nextflow.Session - [7d/2eb1c7] Submitted process > filter_length (8)
+Jan-03 23:20:18.367 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.368 [Task submitter] INFO  nextflow.Session - [af/fd44a2] Submitted process > filter_length (7)
+Jan-03 23:20:18.375 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.377 [Task submitter] INFO  nextflow.Session - [9a/10caac] Submitted process > filter_length (5)
+Jan-03 23:20:18.382 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.383 [Task submitter] INFO  nextflow.Session - [28/b94a94] Submitted process > filter_length (2)
+Jan-03 23:20:18.389 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.391 [Task submitter] INFO  nextflow.Session - [48/322f39] Submitted process > filter_length (3)
+Jan-03 23:20:18.399 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.401 [Task submitter] INFO  nextflow.Session - [8f/05f963] Submitted process > filter_length (4)
+Jan-03 23:20:18.409 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.411 [Task submitter] INFO  nextflow.Session - [9e/66d9b0] Submitted process > filter_length (6)
+Jan-03 23:20:18.498 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: filter_length (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/b2/ef98272af063c07564a847b6972657]
+Jan-03 23:20:18.523 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: filter_length (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/7d/2eb1c74ae07f0c3466a3067d15bc02]
+Jan-03 23:20:18.527 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: filter_length (7); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/af/fd44a2422abb0f2c744ae720448029]
+Jan-03 23:20:18.529 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: filter_length (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/9a/10caac7cbfa02f29616dab837eb4fe]
+Jan-03 23:20:18.533 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: filter_length (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/28/b94a9435c4d1b42955b3ea73cc93ad]
+Jan-03 23:20:18.536 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: filter_length (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/48/322f39b6f49f7d1b92de8f896c8d54]
+Jan-03 23:20:18.540 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.541 [Task submitter] INFO  nextflow.Session - [f9/b4f85d] Submitted process > split_sequence (1)
+Jan-03 23:20:18.542 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: filter_length (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/8f/05f9630e6872af7dde8195d5cdc2e1]
+Jan-03 23:20:18.544 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: filter_length (6); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/9e/66d9b068af0c3e4da920d7900badc5]
+Jan-03 23:20:18.545 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.545 [Task submitter] INFO  nextflow.Session - [3c/b8817d] Submitted process > split_sequence (3)
+Jan-03 23:20:18.550 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.550 [Task submitter] INFO  nextflow.Session - [ca/76dc84] Submitted process > split_sequence (2)
+Jan-03 23:20:18.554 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.555 [Task submitter] INFO  nextflow.Session - [76/704145] Submitted process > split_sequence (4)
+Jan-03 23:20:18.561 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.561 [Task submitter] INFO  nextflow.Session - [b1/1ce804] Submitted process > split_sequence (5)
+Jan-03 23:20:18.567 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.568 [Task submitter] INFO  nextflow.Session - [a7/ba3e79] Submitted process > split_sequence (6)
+Jan-03 23:20:18.575 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.577 [Task submitter] INFO  nextflow.Session - [e6/f80132] Submitted process > split_sequence (7)
+Jan-03 23:20:18.604 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.607 [Task submitter] INFO  nextflow.Session - [2b/89e3f0] Submitted process > split_sequence (8)
+Jan-03 23:20:18.838 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: split_sequence (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/f9/b4f85d3815a04f57e02deb882b6c39]
+Jan-03 23:20:18.841 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: split_sequence (3); status: COMPLETED; exit: 1; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/3c/b8817dbc890b16cb75daaa5c5b11ac]
+Jan-03 23:20:18.852 [Task monitor] INFO  nextflow.processor.TaskProcessor - [3c/b8817d] NOTE: Process `split_sequence (3)` terminated with an error exit status (1) -- Error is ignored
+Jan-03 23:20:18.857 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.857 [Task submitter] INFO  nextflow.Session - [e5/8f9ef8] Submitted process > run_assembly (1)
+Jan-03 23:20:18.860 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: split_sequence (2); status: COMPLETED; exit: 1; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/ca/76dc8464346b9b6e9cfc075d72ced3]
+Jan-03 23:20:18.861 [Task monitor] INFO  nextflow.processor.TaskProcessor - [ca/76dc84] NOTE: Process `split_sequence (2)` terminated with an error exit status (1) -- Error is ignored
+Jan-03 23:20:18.862 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 12; name: split_sequence (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/76/704145410a91d5f5217c4d872db6a2]
+Jan-03 23:20:18.865 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 13; name: split_sequence (5); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/b1/1ce804ef15ca551633a6d210d677b7]
+Jan-03 23:20:18.868 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 14; name: split_sequence (6); status: COMPLETED; exit: 1; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/a7/ba3e7912de06df1c25b6107612281b]
+Jan-03 23:20:18.869 [Task monitor] INFO  nextflow.processor.TaskProcessor - [a7/ba3e79] NOTE: Process `split_sequence (6)` terminated with an error exit status (1) -- Error is ignored
+Jan-03 23:20:18.871 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 15; name: split_sequence (7); status: COMPLETED; exit: 1; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/e6/f80132e2e78f8e823fa2e1e7933d46]
+Jan-03 23:20:18.871 [Task monitor] INFO  nextflow.processor.TaskProcessor - [e6/f80132] NOTE: Process `split_sequence (7)` terminated with an error exit status (1) -- Error is ignored
+Jan-03 23:20:18.873 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.875 [Task submitter] INFO  nextflow.Session - [c7/a7d0bf] Submitted process > run_assembly (2)
+Jan-03 23:20:18.875 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 16; name: split_sequence (8); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/2b/89e3f0ddf34c24112f2397e1b7ca07]
+Jan-03 23:20:18.882 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.883 [Task submitter] INFO  nextflow.Session - [1d/403155] Submitted process > run_assembly (3)
+Jan-03 23:20:18.897 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.897 [Task submitter] INFO  nextflow.Session - [78/df0fb6] Submitted process > run_assembly (4)
+Jan-03 23:20:18.988 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 17; name: run_assembly (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/e5/8f9ef83543be506547f4d8f890c069]
+Jan-03 23:20:18.997 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:18.998 [Task submitter] INFO  nextflow.Session - [5a/996315] Submitted process > run_map_back (1)
+Jan-03 23:20:19.003 [Task monitor] DEBUG n.util.BlockingThreadExecutorFactory - Thread pool name=FileTransfer; maxThreads=24; maxQueueSize=72; keepAlive=1m
+Jan-03 23:20:19.010 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 18; name: run_assembly (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/c7/a7d0bf9d356215f24c7d65b9abfcdb]
+Jan-03 23:20:19.014 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 19; name: run_assembly (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/1d/403155c6d0877e3a52958e079438a2]
+Jan-03 23:20:19.018 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: run_assembly (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/78/df0fb614ea1ea183f16175932ac86c]
+Jan-03 23:20:19.021 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:19.021 [Task submitter] INFO  nextflow.Session - [29/cad739] Submitted process > run_map_back (2)
+Jan-03 23:20:19.026 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:19.027 [Task submitter] INFO  nextflow.Session - [5a/4651b5] Submitted process > run_map_back (3)
+Jan-03 23:20:19.034 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-03 23:20:19.034 [Task submitter] INFO  nextflow.Session - [8a/ba6066] Submitted process > run_map_back (4)
+Jan-03 23:20:21.450 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 21; name: run_map_back (1); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/5a/996315f1480e91b282e1aac4bd46b0]
+Jan-03 23:20:21.452 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 22; name: run_map_back (2); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/29/cad739e39d537e8a53de64d113b4ee]
+Jan-03 23:20:21.454 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 23; name: run_map_back (3); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/5a/4651b5e0a9fa6e6860635f99517d0e]
+Jan-03 23:20:21.455 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 24; name: run_map_back (4); status: COMPLETED; exit: 0; error: -; workDir: /Users/phki/Desktop/plasmid_nextflow/plasmidPublication/work/8a/ba60661fe73b8238ed088183373e80]
+Jan-03 23:20:21.457 [main] DEBUG nextflow.Session - Session await > all process finished
+Jan-03 23:20:21.458 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-03 23:20:21.469 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=20; failedCount=4; ignoredCount=4; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=11.4s; failedDuration=1s; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=8; peakCpus=8; peakMemory=0; ]
+Jan-03 23:20:21.499 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Jan-03 23:20:21.507 [main] DEBUG nextflow.util.SpuriousDeps - AWS S3 uploader shutdown
+Jan-03 23:20:21.526 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
