@@ -22,9 +22,9 @@ These instructions will let you run the assembly workflow.
 
 ###Dependencies
 
-Java 8 \n
-Nextflow
-Docker
+Java 8 <br/>
+Nextflow <br/>
+Docker <br/>
 
 ### Running the workflow
 
@@ -44,7 +44,7 @@ Docker
   
 3. Output
 
-  Folder with candidate assemblies per sample (<dir>/output/assemblies)
+  Folder with candidate assemblies per sample (<dir>/output/assemblies) <br/>
   Folder with stats for each candidate per sample (<dir>/output/remapping)
 
 ## Author of scripts
