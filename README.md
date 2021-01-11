@@ -22,7 +22,7 @@ These instructions will let you run the assembly workflow.
 
 ###Dependencies
 
-Java 8
+Java 8 \n
 Nextflow
 Docker
 
