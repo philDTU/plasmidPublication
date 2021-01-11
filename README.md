@@ -1,14 +1,6 @@
 # plasmidPublication
 A Peak into the Plasmidome of Global Sewage
 
-Dependencies:
-
-Java 8
-nextlflow
-
-docker build -t plasmid_publication $dir/docker
-nextflow run main.df -with-docker plasmid_publication
-
 # plasmidPublication
 
 This repository contains the nextflow workflow for our publication 'A Peak into the Plasmidome of Global Sewage '
@@ -28,13 +20,13 @@ TBD
 
 These instructions will let you run the assembly workflow.
 
-### Prerequisites
+###Dependencies
 
 Java 8
 Nextflow
 Docker
 
-### Building the database
+### Running the workflow
 
 1. Create docker image
 
@@ -47,7 +39,7 @@ Docker
   Put you fastq-file into the data folder
  
   ```
-  nextflow run main -with-docker plasmid_publication
+  nextflow run main.nf -with-docker plasmid_publication
   ```
   
 3. Output
