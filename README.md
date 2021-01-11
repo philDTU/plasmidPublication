@@ -3,7 +3,7 @@ A Peak into the Plasmidome of Global Sewage
 
 # plasmidPublication
 
-This repository contains the nextflow workflow for our publication 'A Peak into the Plasmidome of Global Sewage '
+This repository contains the nextflow workflow for our publication 'A Peak into the Plasmidome of Global Sewage'
 
 Abstract of publication:
 
@@ -36,7 +36,7 @@ Docker <br/>
 
 2. Run workflow
  
-  Put you fastq-file into the data folder
+  Put you fastq-file into the data folder.
  
   ```
   nextflow run main.nf -with-docker plasmid_publication
@@ -45,7 +45,7 @@ Docker <br/>
 3. Output
 
   Folder with candidate assemblies per sample (<dir>/output/assemblies) <br/>
-  Folder with stats for each candidate per sample (<dir>/output/remapping)
+  Folder with stats for each candidate per sample (<dir>/output/remapping) <br/>
 
 ## Author of scripts
 
