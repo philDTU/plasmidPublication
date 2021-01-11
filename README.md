@@ -20,7 +20,7 @@ TBD
 
 These instructions will let you run the assembly workflow.
 
-###Dependencies
+### Dependencies
 
 Java 8 <br/>
 Nextflow <br/>
