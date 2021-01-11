@@ -44,8 +44,8 @@ Docker <br/>
   
 3. Output
 
-  Folder with candidate assemblies per sample (<dir>/output/assemblies) <br/>
-  Folder with stats for each candidate per sample (<dir>/output/remapping) <br/>
+  Folder with candidate assemblies per sample (\<dir\>/output/assemblies) <br/>
+  Folder with stats for each candidate per sample (\<dir\>/output/remapping) <br/>
 
 ## Author of scripts
 
